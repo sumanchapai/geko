@@ -37,6 +37,6 @@ jobs:
       - uses: go-semantic-release/action@v1
         with:
           hooks: goreleaser
-          update-file: main.go
+          update-file: package.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
