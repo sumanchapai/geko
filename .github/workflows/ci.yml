@@ -38,5 +38,6 @@ jobs:
         with:
           hooks: goreleaser
           update-file: package.json
+          update-files: ["package.json"]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
