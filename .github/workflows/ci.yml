@@ -36,6 +36,8 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.21
-      - uses: sumanchapai/go-semantic-release-action@4c010cc5609343537e13d7a138c4f7743fa5e09d
+      - uses: sumanchapai/go-semantic-release-action@98f1d1bbb2c4095f271b0f68b426a044c1326f0e
+        with:
+          pre-release-post-dry-cmd: "echo hello world && echo foobar && git status"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
