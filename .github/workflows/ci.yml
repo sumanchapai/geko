@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.21
-      - uses: sumanchapai/go-semantic-release-action@a333613a817e0ae9e1858fca5b3525670f27fd25
+      - uses: sumanchapai/go-semantic-release-action@fc14d36f34e732082d13cf162473b2abd8ef6de9
         with:
           hooks: goreleaser
           update-file: package.json
