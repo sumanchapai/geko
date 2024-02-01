@@ -10,6 +10,7 @@ var version = "0.0.0"
 
 func main() {
 	// Version
+	fmt.Println("version", version)
 	versionPtr := flag.Bool("version", false, "version")
 	flag.Parse()
 	if *versionPtr {
