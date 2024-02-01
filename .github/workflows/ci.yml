@@ -37,5 +37,7 @@ jobs:
       - uses: sumanchapai/go-semantic-release-action@0a66b54b093b23b711439a7daa38f92c4406ab0d
         with:
           hooks: goreleaser
+          gitUserName: geko
+          gitUserEmail: geko@example.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
