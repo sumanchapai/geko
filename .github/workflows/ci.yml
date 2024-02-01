@@ -34,11 +34,9 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.21
-      - uses: go-semantic-release/action@v1
+      - uses: sumanchapai/go-semantic-release-action@a333613a817e0ae9e1858fca5b3525670f27fd25
         with:
           hooks: goreleaser
           update-file: package.json
-          update-files: 
-            - package.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
