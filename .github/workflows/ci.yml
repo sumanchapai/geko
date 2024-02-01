@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.21
-      - uses: sumanchapai/go-semantic-release-action@0a66b54b093b23b711439a7daa38f92c4406ab0d
+      - uses: sumanchapai/go-semantic-release-action@75f927126caa4b8d38d94f4a5497febe28251587
         with:
           hooks: goreleaser
           gitUserName: geko
