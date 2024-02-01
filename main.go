@@ -17,8 +17,12 @@ func main() {
 		return
 	}
 	// Normal
-	for _, msg := range os.Args[1:] {
-		fmt.Printf("%v", msg)
+	for i, msg := range os.Args[1:] {
+		if i == 0 {
+			fmt.Printf("%v", msg)
+		} else {
+			fmt.Printf(" %v", msg)
+		}
 	}
 	fmt.Println()
 }
