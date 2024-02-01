@@ -44,3 +44,4 @@ jobs:
           git config user.email "bot@example.com"
           git config user.name "bot"
           git commit -m 'release: update version'
+          git push
