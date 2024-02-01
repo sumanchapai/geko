@@ -24,5 +24,5 @@ func main() {
 			fmt.Printf(" %v", msg)
 		}
 	}
-	fmt.Println("goodbye")
+	fmt.Println()
 }
